@@ -8,388 +8,451 @@
     <link rel="stylesheet" href="styles/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800;900&display=swap"
-        rel="stylesheet">
-    <style>
-        .floating-icons {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            top: 0;
-            left: 0;
-            pointer-events: none;
-            z-index: 1;
-        }
-
-        .float-item {
-            position: absolute;
-            width: 40px;
-            height: 40px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.5rem;
-            background: white;
-            border-radius: 50%;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-            animation: float 4s ease-in-out infinite;
-        }
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <div class="main-container">
         <!-- Hero Section -->
-        <section class="hero">
-            <div class="floating-icons">
-                <div class="float-item" style="top: 10%; left: 10%;">📘</div>
-                <div class="float-item" style="top: 25%; right: 5%; animation-delay: 1s;">⭐</div>
-                <div class="float-item" style="bottom: 15%; left: 5%; animation-delay: 2s;">🧩</div>
-                <div class="float-item" style="bottom: 25%; right: 10%; animation-delay: 1.5s;">✏️</div>
-            </div>
-
-            <div class="logo">
+        <header class="hero">
+            <div class="logo mb-4">
                 <img src="https://i.im.ge/2026/01/28/GGmMmM.ChatGPT-Image-27-de-jan-de-2026-23-31-47.png"
-                    alt="Cérebro em Jogo Logo">
-                <span><span style="color: hsl(45 100% 60%);">Cérebro</span> <span
-                        style="color: hsl(217 91% 60%);">em</span> <span
-                        style="color: hsl(340 82% 65%);">Jogo</span></span>
+                    alt="Cérebro em Jogo" style="width: 120px;">
             </div>
 
-            <div style="position: relative; z-index: 2;">
-                <h1 style="font-size: 2.2rem; margin-bottom: 2rem;">
-                    <span class="text-gradient">+Diversão +Conhecimento</span><br>
-                    <span style="color: #1F2937;">= Um Começo de Ano Escolar</span><br>
-                    <span style="color: #3B82F6;">Muito Mais Leve!</span>
-                </h1>
+            <h1>
+                <span class="text-gradient">+Diversão +Conhecimento</span><br>
+                = Um Começo de Ano Escolar<br>
+                <span class="text-blue" style="font-size: 3.5rem;">Muito Mais Leve!</span>
+            </h1>
 
-                <p style="font-weight: 500; font-size: 1.05rem; color: #4B5563; padding: 0 1rem; margin-bottom: 2rem;">
-                    O <strong>Cérebro em Jogo – Volta às Aulas</strong> é um kit digital com <strong>mais de 2.000
-                        atividades</strong> lúdicas e inteligentes, que estimulam <span class="text-gradient">foco,
-                        memória, criatividade e raciocínio</span>.
-                </p>
+            <p class="mb-4"
+                style="max-width: 650px; margin-left: auto; margin-right: auto; font-weight: 600; color: #4B5563; font-size: 1.1rem; line-height: 1.4;">
+                O <strong>Cérebro em Jogo – Volta às Aulas</strong> é um kit digital com <span class="text-blue">mais de
+                    2.000 atividades</span> lúdicas e inteligentes, criado para preparar seu filho para o ano letivo,
+                estimulando <span style="color: #F43F5E;">foco, memória, criatividade e raciocínio</span> — tudo de
+                forma divertida e sem pressão.
+            </p>
 
-                <div
-                    style="background-color: #FEF3C7; border: 1px solid #FDE68A; padding: 1.25rem; border-radius: 1rem; margin: 0 1rem 2.5rem; text-align: center;">
-                    <p style="margin-bottom: 0; font-weight: 800; font-size: 0.95rem; color: #1F2937;">
-                        👉 Ideal para crianças que estão voltando à escola ou iniciando a vida escolar
-                    </p>
+            <div
+                style="background-color: #FEF3C7; color: #92400E; display: inline-block; padding: 0.6rem 1.8rem; border-radius: 999px; font-weight: 800; font-size: 0.95rem; margin-bottom: 2.5rem; border: 1px solid #FDE68A;">
+                👉 Ideal para crianças que estão voltando para a escola ou iniciando a vida escolar
+            </div>
+
+            <div class="mb-4">
+                <a href="#pricing" class="btn-cta btn-green" style="font-size: 1.35rem; padding: 1.4rem 3rem;">
+                    Sim! Quero preparar meu filho agora →
+                </a>
+            </div>
+
+            <div
+                style="display: flex; align-items: center; justify-content: center; gap: 0.75rem; font-weight: 700; color: #6B7280; font-size: 1rem;">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    style="color: #10B981;">
+                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                    <circle cx="9" cy="7" r="4"></circle>
+                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                    <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                </svg>
+                <span>+2.863 famílias</span> já conseguiram o ano com mais tranquilidade
+            </div>
+        </header>
+
+        <!-- O Que Seu Filho Vai Encontrar -->
+        <section>
+            <div class="text-center mb-4">
+                <img src="https://em-content.zobj.net/source/apple/391/closed-book_1f4d8.png" alt="Book"
+                    style="width: 50px;">
+            </div>
+            <h2 style="font-size: 2.8rem;">O Que Seu Filho Vai Encontrar no <span class="text-gradient">Cérebro em
+                    Jogo?</span></h2>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <img src="https://i.im.ge/2026/01/28/GGmrBq.2000-Atividades-1.png" alt="Atividades Educativas">
+                    <div class="feature-card-content">
+                        <h3 style="font-size: 1.4rem; margin-bottom: 1rem;">+1.000 Atividades Educativas para a Volta às
+                            Aulas</h3>
+                        <p style="font-size: 0.95rem; color: #4B5563; margin-bottom: 1.5rem; line-height: 1.5;">
+                            Atividades pensadas para desenvolver atenção, concentração, fala e coordenação, ajudando a
+                            criança a se adaptar à rotina escolar, mesmo aquelas mais agitadas ou com dificuldade de
+                            foco.</p>
+                        <p style="font-weight: 800; font-size: 0.85rem; margin-bottom: 0.8rem; color: #9CA3AF;">para:
+                        </p>
+                        <ul class="para-quem-list" style="gap: 0.5rem;">
+                            <li class="para-quem-item">
+                                <div class="check-icon"
+                                    style="background:#ECFDF5; border-radius:50%; width:20px; height:20px; display:flex; align-items:center; justify-content:center; color:#10B981; font-size:12px;">
+                                    ✓</div> Reforçar o aprendizado em casa
+                            </li>
+                            <li class="para-quem-item">
+                                <div class="check-icon"
+                                    style="background:#ECFDF5; border-radius:50%; width:20px; height:20px; display:flex; align-items:center; justify-content:center; color:#10B981; font-size:12px;">
+                                    ✓</div> Acompanhar o conteúdo da escola
+                            </li>
+                            <li class="para-quem-item">
+                                <div class="check-icon"
+                                    style="background:#ECFDF5; border-radius:50%; width:20px; height:20px; display:flex; align-items:center; justify-content:center; color:#10B981; font-size:12px;">
+                                    ✓</div> Crie uma rotina nível de estudos
+                            </li>
+                        </ul>
+                    </div>
                 </div>
 
-                <div style="padding: 0 1.5rem;">
-                    <a href="#pricing" class="btn-cta"
-                        style="background: linear-gradient(180deg, #10B981 0%, #059669 100%);">
-                        Sim! Quero preparar meu filho agora
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
-                            <line x1="5" y1="12" x2="19" y2="12"></line>
-                            <polyline points="12 5 19 12 12 19"></polyline>
-                        </svg>
-                    </a>
+                <div class="feature-card">
+                    <img src="https://i.im.ge/2026/01/28/GGmaoW.2000-Atividades-2.png" alt="Atividades Lúdicas">
+                    <div class="feature-card-content">
+                        <h3 style="font-size: 1.4rem; margin-bottom: 1rem;">Atividades Lúdicas que Ensinam Brincando
+                        </h3>
+                        <p style="font-size: 0.95rem; color: #4B5563; margin-bottom: 1.5rem; line-height: 1.5;">Nada de
+                            tarefas cansativas. Aqui, seu filho aprende brincando, ganha mais autonomia, melhora a
+                            comunicação e chega na escola mais confiante e preparado.</p>
+                        <p style="font-weight: 800; font-size: 0.85rem; margin-bottom: 0.8rem; color: #9CA3AF;">para:
+                        </p>
+                        <ul class="para-quem-list" style="gap: 0.5rem;">
+                            <li class="para-quem-item">
+                                <div class="check-icon"
+                                    style="background:#ECFDF5; border-radius:50%; width:20px; height:20px; display:flex; align-items:center; justify-content:center; color:#10B981; font-size:12px;">
+                                    ✓</div> Antes das aulas começarem
+                            </li>
+                            <li class="para-quem-item">
+                                <div class="check-icon"
+                                    style="background:#ECFDF5; border-radius:50%; width:20px; height:20px; display:flex; align-items:center; justify-content:center; color:#10B981; font-size:12px;">
+                                    ✓</div> No contraturno escolar
+                            </li>
+                            <li class="para-quem-item">
+                                <div class="check-icon"
+                                    style="background:#ECFDF5; border-radius:50%; width:20px; height:20px; display:flex; align-items:center; justify-content:center; color:#10B981; font-size:12px;">
+                                    ✓</div> Como reforço pedagógico em casa
+                            </li>
+                        </ul>
+                    </div>
                 </div>
 
-                <div
-                    style="margin-top: 1.5rem; display: flex; align-items: center; justify-content: center; gap: 0.5rem; font-weight: 800; color: #4B5563; font-size: 0.9rem;">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="3"
-                        stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
-                        <circle cx="9" cy="7" r="4"></circle>
-                        <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
-                        <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
-                    </svg>
-                    <span>+2.863 famílias</span> já começaram o ano com tranquilidade
+                <div class="feature-card">
+                    <img src="https://i.im.ge/2026/01/28/GGmMmM.ChatGPT-Image-27-de-jan-de-2026-23-31-47.png"
+                        alt="Testado">
+                    <div class="feature-card-content">
+                        <h3 style="font-size: 1.4rem; margin-bottom: 1rem;">Testado por Pais e Aprovado por Professores
+                        </h3>
+                        <p style="font-size: 0.95rem; color: #4B5563; line-height: 1.5;">Material desenvolvido com base
+                            em estudos educacionais, usado por educadores e recomendado por profissionais da área
+                            infantil, auxiliando crianças a terem um melhor desempenho logo no início do ano escolar.
+                        </p>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <!-- Divider -->
-        <div style="text-align: center; margin: 2rem 0;">
-            <div style="font-size: 2.5rem; margin-bottom: 0.5rem;">📘</div>
-            <div style="font-size: 1.5rem;">🖱️</div>
-        </div>
+        <!-- Para Quem -->
+        <section>
+            <div class="para-quem">
+                <div class="mb-4 text-center">
+                    <img src="https://em-content.zobj.net/source/apple/391/bullseye_1f3af.png" alt="Target"
+                        style="width: 50px;">
+                </div>
+                <h2 style="font-size: 2.5rem; margin-bottom: 2.5rem;">Para Quem é Esse Pack?</h2>
+                <ul class="para-quem-list mb-4" style="gap: 1.2rem;">
+                    <li class="para-quem-item"><span class="check-icon"
+                            style="background:#ECFDF5; border-radius:50%; width:24px; height:24px; display:flex; align-items:center; justify-content:center; color:#10B981; font-size:14px; flex-shrink: 0;">✓</span>
+                        Pais e mães de crianças de 0 a 7 anos que querem preparar os filhos para o ano letivo</li>
+                    <li class="para-quem-item"><span class="check-icon"
+                            style="background:#ECFDF5; border-radius:50%; width:24px; height:24px; display:flex; align-items:center; justify-content:center; color:#10B981; font-size:14px; flex-shrink: 0;">✓</span>
+                        Famílias que desejam menos telas e mais aprendizado em casa</li>
+                    <li class="para-quem-item"><span class="check-icon"
+                            style="background:#ECFDF5; border-radius:50%; width:24px; height:24px; display:flex; align-items:center; justify-content:center; color:#10B981; font-size:14px; flex-shrink: 0;">✓</span>
+                        Crianças com dificuldade de atenção, foco ou adaptação escolar</li>
+                    <li class="para-quem-item"><span class="check-icon"
+                            style="background:#ECFDF5; border-radius:50%; width:24px; height:24px; display:flex; align-items:center; justify-content:center; color:#10B981; font-size:14px; flex-shrink: 0;">✓</span>
+                        Professores de Educação Infantil</li>
+                    <li class="para-quem-item"><span class="check-icon"
+                            style="background:#ECFDF5; border-radius:50%; width:24px; height:24px; display:flex; align-items:center; justify-content:center; color:#10B981; font-size:14px; flex-shrink: 0;">✓</span>
+                        Psicopedagogos e terapeutas ocupacionais</li>
+                    <li class="para-quem-item"><span class="check-icon"
+                            style="background:#ECFDF5; border-radius:50%; width:24px; height:24px; display:flex; align-items:center; justify-content:center; color:#10B981; font-size:14px; flex-shrink: 0;">✓</span>
+                        Crianças com atraso no desenvolvimento ou com espectro autista</li>
+                    <li class="para-quem-item"><span class="check-icon"
+                            style="background:#ECFDF5; border-radius:50%; width:24px; height:24px; display:flex; align-items:center; justify-content:center; color:#10B981; font-size:14px; flex-shrink: 0;">✓</span>
+                        Escolas e creches que buscam material complementar para o início do ano</li>
+                </ul>
 
-        <!-- Content Sections -->
-        <div style="padding: 0 1.5rem;">
-            <h2 style="font-size: 1.8rem; margin-bottom: 2.5rem;">O Que Seu Filho Vai Encontrar no <span
-                    class="text-gradient">Cérebro em Jogo?</span></h2>
+                <div class="features-grid mt-4">
+                    <img src="https://i.im.ge/2026/01/28/GGmz7a.1.png" alt="Activity 1"
+                        style="border-radius: 1.5rem; box-shadow: var(--shadow-lg);">
+                    <img src="https://i.im.ge/2026/01/28/GGm6eF.2.png" alt="Activity 2"
+                        style="border-radius: 1.5rem; box-shadow: var(--shadow-lg);">
+                    <img src="https://i.im.ge/2026/01/28/GGmXWL.3.png" alt="Activity 3"
+                        style="border-radius: 1.5rem; box-shadow: var(--shadow-lg);">
+                </div>
+            </div>
+        </section>
 
-            <div class="card" style="padding: 0;">
-                <img src="https://i.im.ge/2026/01/28/GGmrBq.2000-Atividades-1.png" alt="1000 Atividades"
-                    style="border-radius: 0;">
-                <div style="padding: 1.5rem;">
-                    <h3 style="font-size: 1.4rem;">+1.000 Atividades Educativas para a Volta às Aulas</h3>
-                    <p style="font-size: 0.95rem; color: #4B5563; margin-bottom: 1.5rem;">Atividades pensadas para
-                        desenvolver atenção, concentração, fala e coordenação.</p>
-                    <ul class="feature-list">
-                        <li class="feature-item">
-                            <div class="feature-check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"
-                                    stroke="currentColor" stroke-width="4" stroke-linecap="round"
-                                    stroke-linejoin="round">
-                                    <polyline points="20 6 9 17 4 12"></polyline>
-                                </svg></div> Reforçar o aprendizado em casa
-                        </li>
-                        <li class="feature-item">
-                            <div class="feature-check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"
-                                    stroke="currentColor" stroke-width="4" stroke-linecap="round"
-                                    stroke-linejoin="round">
-                                    <polyline points="20 6 9 17 4 12"></polyline>
-                                </svg></div> Acompanhar o conteúdo da escola
-                        </li>
-                        <li class="feature-item">
-                            <div class="feature-check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"
-                                    stroke="currentColor" stroke-width="4" stroke-linecap="round"
-                                    stroke-linejoin="round">
-                                    <polyline points="20 6 9 17 4 12"></polyline>
-                                </svg></div> Criar uma rotina leve de estudos
-                        </li>
-                    </ul>
+        <!-- Benefícios -->
+        <section>
+            <div class="text-center mb-4">
+                <img src="https://em-content.zobj.net/source/apple/391/sun-with-face_1f31e.png" alt="Sun"
+                    style="width: 50px;">
+            </div>
+            <h2 style="font-size: 2.5rem; margin-bottom: 3rem;">Benefícios Diretos para Seu Filho na Volta às Aulas</h2>
+            <div class="beneficios-container">
+                <div class="beneficio-card"><span style="font-size: 1.5rem;">👁️</span> Mais atenção e concentração na
+                    sala</div>
+                <div class="beneficio-card"><span style="font-size: 1.5rem;">🖐️</span> Desenvolvimento de
+                    desenvolvimento motor</div>
+                <div class="beneficio-card"><span style="font-size: 1.5rem;">🧠</span> Estímulo à memória e raciocínio
+                    lógico</div>
+                <div class="beneficio-card"><span style="font-size: 1.5rem;">💬</span> Melhoria da linguagem e
+                    comunicação</div>
+                <div class="beneficio-card"><span style="font-size: 1.5rem;">😌</span> Menos estresse na adaptação
+                    escolar</div>
+                <div class="beneficio-card"><span style="font-size: 1.5rem;">❤️</span> Mais conexão entre pais e filhos
+                </div>
+            </div>
+        </section>
+
+        <!-- Como Você Recebe -->
+        <section style="background-color: #FFF9E6; padding: 6rem 1.5rem;">
+            <div class="text-center mb-4">
+                <img src="https://em-content.zobj.net/source/apple/391/printer_1f5a8-fe0f.png" alt="Printer"
+                    style="width: 60px;">
+            </div>
+            <h2 style="font-size: 2.5rem; margin-bottom: 4rem;">Como Você recebe o Material?</h2>
+
+            <div class="pricing-container" style="gap: 1.5rem; margin-top: 0;">
+                <div class="feature-card"
+                    style="padding: 2.5rem; align-items: center; text-align: center; border-radius: 2rem; width: 100%;">
+                    <div
+                        style="background-color: #DBEAFE; color: #2563EB; width: 70px; height: 70px; border-radius: 20px; display: flex; align-items: center; justify-content: center; font-size: 1.8rem; margin-bottom: 2rem;">
+                        📧</div>
+                    <h3 style="font-size: 1.5rem; margin-bottom: 0.5rem;">100% Digital (PDF)</h3>
+                    <p style="font-size: 0.95rem; font-weight: 700; color: #3B82F6;">Acesso imediato após a compra</p>
+                </div>
+                <div class="feature-card"
+                    style="padding: 2.5rem; align-items: center; text-align: center; border-radius: 2rem; width: 100%;">
+                    <div
+                        style="background-color: #F3F4F6; color: #1F2937; width: 70px; height: 70px; border-radius: 20px; display: flex; align-items: center; justify-content: center; font-size: 1.8rem; margin-bottom: 2rem;">
+                        🖨️</div>
+                    <h3 style="font-size: 1.5rem; margin-bottom: 0.5rem;">Pronto para Imprimir</h3>
+                    <p style="font-size: 0.95rem; font-weight: 700; color: #4B5563;">Use em casa ou na escola</p>
                 </div>
             </div>
 
-            <div class="card" style="padding: 0;">
-                <img src="https://i.im.ge/2026/01/28/GGmaoW.2000-Atividades-2.png" alt="Atividades Lúdicas"
-                    style="border-radius: 0;">
-                <div style="padding: 1.5rem;">
-                    <h3 style="font-size: 1.4rem;">Atividades Lúdicas que Ensinam Brincando</h3>
-                    <p style="font-size: 0.95rem; color: #4B5563;">Material criado para garantir que o aprendizado seja
-                        leve e divertido para a criança.</p>
+            <div
+                style="background: linear-gradient(90deg, #DBEAFE 0%, #FEF3C7 100%); padding: 2rem; border-radius: 1.5rem; text-align: center; margin-top: 2rem; box-shadow: var(--shadow);">
+                <div
+                    style="display: flex; align-items: center; justify-content: center; gap: 1.5rem; margin-bottom: 1rem;">
+                    <button
+                        style="background-color: #3B82F6; color: white; border: none; padding: 0.8rem 1.5rem; border-radius: 10px; font-weight: 800; font-size: 1rem; cursor: pointer; display: flex; align-items: center; gap: 0.5rem;"><span
+                            style="font-size: 1.2rem;">📥</span> Acesse Agora</button>
+                    <button
+                        style="background-color: #10B981; color: white; border: none; padding: 0.8rem 1.5rem; border-radius: 10px; font-weight: 800; font-size: 1rem; cursor: pointer; display: flex; align-items: center; gap: 0.5rem;"><span
+                            style="font-size: 1.2rem;">⚡</span> 'Hoje Mesmo!'</button>
                 </div>
+                <p style="font-size: 1rem; font-weight: 700; color: #4B5563; margin: 0; line-height: 1.5;">Receba tudo
+                    direto no seu WhatsApp ou e-mail e <br> já comece a preparar seu filho para a volta às aulas.</p>
             </div>
-
-            <div class="card" style="padding: 0;">
-                <img src="https://i.im.ge/2026/01/28/GGmMmM.ChatGPT-Image-27-de-jan-de-2026-23-31-47.png" alt="Testado"
-                    style="border-radius: 0;">
-                <div style="padding: 1.5rem; text-align: center;">
-                    <h3 style="font-size: 1.4rem;">Testado por Pais e Aprovado por Professores</h3>
-                    <p style="font-size: 0.95rem; color: #4B5563;">Recomendado por quem entende de educação e
-                        desenvolvimento infantil.</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- Para Quem Content -->
-        <div style="background-color: #F9FAFB; padding: 4rem 1.5rem; margin: 3rem 0;">
-            <div style="text-align: center; font-size: 2.5rem; margin-bottom: 1rem;">🎯</div>
-            <h2 style="font-size: 1.6rem; margin-bottom: 2.5rem;">Para Quem é Esse Pack?</h2>
-            <ul class="feature-list">
-                <li class="feature-item">
-                    <div class="feature-check" style="background-color: #DBEAFE; color: #2563EB;"><svg width="14"
-                            height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="4"
-                            stroke-linecap="round" stroke-linejoin="round">
-                            <polyline points="20 6 9 17 4 12"></polyline>
-                        </svg></div> Pais e mães de crianças de 0 a 7 anos
-                </li>
-                <li class="feature-item">
-                    <div class="feature-check" style="background-color: #DBEAFE; color: #2563EB;"><svg width="14"
-                            height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="4"
-                            stroke-linecap="round" stroke-linejoin="round">
-                            <polyline points="20 6 9 17 4 12"></polyline>
-                        </svg></div> Famílias que desejam menos telas
-                </li>
-                <li class="feature-item">
-                    <div class="feature-check" style="background-color: #DBEAFE; color: #2563EB;"><svg width="14"
-                            height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="4"
-                            stroke-linecap="round" stroke-linejoin="round">
-                            <polyline points="20 6 9 17 4 12"></polyline>
-                        </svg></div> Crianças com dificuldade de atenção ou foco
-                </li>
-                <li class="feature-item">
-                    <div class="feature-check" style="background-color: #DBEAFE; color: #2563EB;"><svg width="14"
-                            height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="4"
-                            stroke-linecap="round" stroke-linejoin="round">
-                            <polyline points="20 6 9 17 4 12"></polyline>
-                        </svg></div> Professores da Educação Infantil
-                </li>
-            </ul>
-        </div>
-
-        <!-- Benefícios Section -->
-        <div style="padding: 0 1.5rem 4rem;">
-            <h2 style="font-size: 1.6rem; line-height: 1.25; margin-bottom: 2.5rem;">Benefícios Diretos para Seu Filho
-                na Volta às Aulas</h2>
-            <div class="beneficio-card"
-                style="padding: 1rem; margin-bottom: 0.75rem; display: flex; align-items: center; gap: 1rem; background-color: white; border-radius: 1rem; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);">
-                <span style="font-size: 1.5rem;">👁️</span> <span style="font-weight: 700;">Mais atenção e
-                    concentração em sala</span>
-            </div>
-            <div class="beneficio-card"
-                style="padding: 1rem; margin-bottom: 0.75rem; display: flex; align-items: center; gap: 1rem; background-color: white; border-radius: 1rem; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);">
-                <span style="font-size: 1.5rem;">🖐️</span> <span style="font-weight: 700;">Desenvolvimento da
-                    coordenação motora</span>
-            </div>
-            <div class="beneficio-card"
-                style="padding: 1rem; margin-bottom: 0.75rem; display: flex; align-items: center; gap: 1rem; background-color: white; border-radius: 1rem; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);">
-                <span style="font-size: 1.5rem;">🧠</span> <span style="font-weight: 700;">Estímulo à memória e
-                    raciocínio lógico</span>
-            </div>
-            <div class="beneficio-card"
-                style="padding: 1rem; margin-bottom: 0.75rem; display: flex; align-items: center; gap: 1rem; background-color: white; border-radius: 1rem; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);">
-                <span style="font-size: 1.5rem;">💬</span> <span style="font-weight: 700;">Melhora da linguagem e
-                    comunicação</span>
-            </div>
-            <div class="beneficio-card"
-                style="padding: 1rem; margin-bottom: 0.75rem; display: flex; align-items: center; gap: 1rem; background-color: white; border-radius: 1rem; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);">
-                <span style="font-size: 1.5rem;">😌</span> <span style="font-weight: 700;">Menos estresse na adaptação
-                    escolar</span>
-            </div>
-            <div class="beneficio-card"
-                style="padding: 1rem; margin-bottom: 0.75rem; display: flex; align-items: center; gap: 1rem; background-color: white; border-radius: 1rem; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);">
-                <span style="font-size: 1.5rem;">❤️</span> <span style="font-weight: 700;">Mais conexão entre pais e
-                    filhos</span>
-            </div>
-        </div>
-
-        <!-- Como Recebe -->
-        <div style="text-align: center; padding: 4rem 1.5rem; background-color: #FFF9E6;">
-            <div style="font-size: 3rem; margin-bottom: 1rem;">🖨️</div>
-            <h2 style="font-size: 1.7rem; margin-bottom: 3rem;">Como Você Recebe o Material?</h2>
-            <div class="card" style="background: white; border-radius: 2rem; padding: 2.5rem 1.5rem;">
-                <div style="font-size: 3rem; margin-bottom: 1.5rem;">📥</div>
-                <h3 style="font-size: 1.5rem; margin-bottom: 0.5rem;">100% Digital (PDF)</h3>
-                <p style="font-weight: 800; color: #3B82F6;">Acesso imediato após a compra</p>
-            </div>
-        </div>
+        </section>
 
         <!-- Bônus Section -->
-        <section style="padding: 4rem 1.5rem;">
-            <h2 class="text-center" style="font-size: 1.8rem; margin-bottom: 3rem;"><span class="text-gradient">BÔNUS
-                    EXCLUSIVOS</span></h2>
-            <div class="pricing-grid">
-                <div class="card" style="padding: 0; position: relative; border-radius: 2rem;">
-                    <div
-                        style="position: absolute; top: 15px; right: 15px; background-color: #FEF3C7; color: #D97706; border: 1px solid #FDE68A; padding: 0.25rem 0.75rem; border-radius: 999px; font-weight: 900; font-size: 0.75rem;">
-                        🎁 GRÁTIS!</div>
-                    <img src="https://i.im.ge/2026/01/28/GeIffz.1.png" alt="Bônus 1"
-                        style="border-radius: 2rem 2rem 0 0;">
-                    <div style="padding: 1.5rem; text-align: center;">
-                        <p style="font-weight: 800; color: #EF4444; font-size: 0.85rem; margin-bottom: 0.5rem;">Livro
-                            de Colorir (220 páginas)</p>
-                    </div>
+        <section>
+            <div class="text-center mb-4">
+                <span
+                    style="font-size: 0.95rem; background: #FEF3C7; color: #92400E; padding: 0.4rem 1.2rem; border-radius: 8px; font-weight: 900; border: 1px solid #FDE68A;">🎁
+                    GRÁTIS!</span>
+            </div>
+            <h2 style="font-size: 3rem; margin-bottom: 4rem;">🎁 BÔNUS EXCLUSIVOS DE <br> <span
+                    class="text-gradient">VOLTA ÁS AULAS</span></h2>
+
+            <div class="bonus-grid mb-4">
+                <div class="bonus-card">
+                    <div class="ribbon">GRÁTIS</div>
+                    <img src="https://em-content.zobj.net/source/apple/391/framed-picture_1f5bc-fe0f.png" alt="Bonus"
+                        style="width: 70px; margin-bottom: 1.5rem;">
+                    <h3 style="font-size: 1.2rem; margin-bottom: 0.5rem;">Livro de Colorir</h3>
+                    <p style="font-size: 0.85rem; font-weight: 700; color: #9CA3AF; margin-bottom: 1rem;">200 páginas
+                    </p>
+                    <div style="font-size: 1.1rem; font-weight: 900; color: #10B981;"><span
+                            style="text-decoration: line-through; color: #D1D5DB; margin-right: 0.5rem; font-weight: 700;">R$
+                            67</span> GRÁTIS</div>
                 </div>
-                <div class="card" style="padding: 0; position: relative; border-radius: 2rem;">
-                    <div
-                        style="position: absolute; top: 15px; right: 15px; background-color: #FEF3C7; color: #D97706; border: 1px solid #FDE68A; padding: 0.25rem 0.75rem; border-radius: 999px; font-weight: 900; font-size: 0.75rem;">
-                        🎁 GRÁTIS!</div>
-                    <img src="https://i.im.ge/2026/01/28/GeIVPS.2.png" alt="Bônus 2"
-                        style="border-radius: 2rem 2rem 0 0;">
-                    <div style="padding: 1.5rem; text-align: center;">
-                        <p style="font-weight: 800; color: #EF4444; font-size: 0.85rem; margin-bottom: 0.5rem;">+50
-                            Atividades Extras</p>
-                    </div>
+                <div class="bonus-card">
+                    <div class="ribbon">GRÁTIS</div>
+                    <img src="https://em-content.zobj.net/source/apple/391/puzzle-piece_2757.png" alt="Bonus"
+                        style="width: 70px; margin-bottom: 1.5rem;">
+                    <h3 style="font-size: 1.2rem; margin-bottom: 0.5rem;">+50 Atividades Lúdicas Extras</h3>
+                    <p style="font-size: 0.85rem; font-weight: 700; color: #9CA3AF; margin-bottom: 1rem;">Exclusivas</p>
+                    <div style="font-size: 1.1rem; font-weight: 900; color: #10B981;"><span
+                            style="text-decoration: line-through; color: #D1D5DB; margin-right: 0.5rem; font-weight: 700;">R$
+                            89</span> GRÁTIS</div>
                 </div>
+                <div class="bonus-card">
+                    <div class="ribbon">GRÁTIS</div>
+                    <img src="https://em-content.zobj.net/source/apple/391/sparkles_2728.png" alt="Bonus"
+                        style="width: 70px; margin-bottom: 1.5rem;">
+                    <h3 style="font-size: 1.2rem; margin-bottom: 0.5rem;">Livro Guia do Autismo</h3>
+                    <p style="font-size: 0.85rem; font-weight: 700; color: #9CA3AF; margin-bottom: 1rem;">Completo</p>
+                    <div style="font-size: 1.1rem; font-weight: 900; color: #10B981;"><span
+                            style="text-decoration: line-through; color: #D1D5DB; margin-right: 0.5rem; font-weight: 700;">R$
+                            47</span> GRÁTIS</div>
+                </div>
+            </div>
+
+            <div class="text-center"
+                style="background: white; border-radius: 2rem; padding: 2.5rem; box-shadow: var(--shadow-xl); border: 2px solid #F3F4F6; max-width: 550px; margin: 3rem auto 0;">
+                <p style="font-size: 1.1rem; font-weight: 800; color: #4B5563;">Somados, mais de</p>
+                <h3 class="text-blue" style="font-size: 3rem; margin: 0.5rem 0; font-weight: 900;">R$ 200 em bônus</h3>
+                <p style="font-size: 1.2rem; font-weight: 900; color: #10B981;">— liberados hoje! 🚀</p>
             </div>
         </section>
 
         <!-- Pricing Section -->
-        <section id="pricing" style="padding: 2rem 1.5rem 6rem;">
-            <h2 class="text-center" style="font-size: 1.8rem; margin-bottom: 3.5rem;">Preparação Completa para o Ano
-                Letivo</h2>
-            <div class="pricing-grid">
+        <section id="pricing" style="background-color: white; padding-bottom: 6rem;">
+            <div class="text-center mb-4">
+                <img src="https://em-content.zobj.net/source/apple/391/backpack_1f392.png" alt="Backpack"
+                    style="width: 50px;">
+            </div>
+            <h2 style="font-size: 3rem;">Escolha Seu Pack e <br> <span class="text-gradient">Comece Agora</span></h2>
+
+            <div class="pricing-container" style="align-items: stretch; margin-top: 5rem;">
                 <!-- Pack Básico -->
-                <div class="price-card" style="border: 2px solid #E5E7EB;">
-                    <div class="badge" style="background-color: #DBEAFE; color: #2563EB;">♦ Pack Básico</div>
-                    <h3 style="font-size: 1.6rem; margin-top: 1rem;">Volta às Aulas</h3>
-                    <ul class="feature-list" style="margin: 2rem 0;">
-                        <li class="feature-item">
-                            <div class="feature-check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"
-                                    stroke="currentColor" stroke-width="4" stroke-linecap="round"
-                                    stroke-linejoin="round">
-                                    <polyline points="20 6 9 17 4 12"></polyline>
-                                </svg></div> 500 Atividades PDF
+                <div class="price-card" style="border: 2px solid #E5E7EB; display: flex; flex-direction: column;">
+                    <div
+                        style="background-color: #DBEAFE; color: #2563EB; display: inline-block; padding: 0.4rem 1.2rem; border-radius: 8px; font-weight: 900; font-size: 0.8rem; margin-bottom: 2rem; align-self: flex-start;">
+                        ◆ Pacote Básico</div>
+                    <h3 style="font-size: 1.8rem; margin-bottom: 2.5rem;">Volta às Aulas</h3>
+                    <ul class="para-quem-list mb-4" style="flex-grow: 1; gap: 1rem;">
+                        <li class="para-quem-item">
+                            <div class="check-icon"
+                                style="background:#ECFDF5; border-radius:50%; width:20px; height:20px; display:flex; align-items:center; justify-content:center; color:#10B981; font-size:12px;">
+                                ✓</div> 500 Atividades
                         </li>
-                        <li class="feature-item">
-                            <div class="feature-check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"
-                                    stroke="currentColor" stroke-width="4" stroke-linecap="round"
-                                    stroke-linejoin="round">
-                                    <polyline points="20 6 9 17 4 12"></polyline>
-                                </svg></div> Acesso por 6 meses
+                        <li class="para-quem-item">
+                            <div class="check-icon"
+                                style="background:#ECFDF5; border-radius:50%; width:20px; height:20px; display:flex; align-items:center; justify-content:center; color:#10B981; font-size:12px;">
+                                ✓</div> Acesso por 6 meses
                         </li>
                     </ul>
-                    <div class="price-tag">
-                        <div class="new-price" style="color: #1F2937; font-size: 3rem;">R$ 4,99</div>
-                        <div style="font-weight: 800; color: #6B7280; font-size: 0.9rem;">💰 Somente hoje</div>
+                    <div class="mb-4 mt-4">
+                        <span class="new-price text-blue" style="font-size: 4rem;">R$ 4,99</span>
+                        <p style="font-size: 1.1rem; font-weight: 900; color: #D97706; margin-top: 0.5rem;">🔥 Somente
+                            hoje</p>
                     </div>
-                    <a href="#" class="btn-cta"
-                        style="background: #1F2937; box-shadow: 0 10px 15px -3px rgba(31, 41, 55, 0.3);">Receber
-                        agora</a>
+                    <a href="#" class="btn-cta btn-blue"
+                        style="width: 100%; border-radius: 12px; font-size: 1.3rem;">Quero agora →</a>
                 </div>
 
                 <!-- Super Pack -->
                 <div class="price-card featured"
-                    style="border: 4px solid #6366F1; border-radius: 2.5rem; padding: 3rem 1.5rem;">
-                    <div class="badge" style="background-color: #FDF2F8; color: #DB2777; top: -15px;">⭐ 🔥 Super Pack
-                    </div>
-                    <h3 style="font-size: 1.7rem; margin-top: 1rem;">Mais de 2.000 Atividades + Bônus</h3>
-                    <ul class="feature-list" style="margin: 2.5rem 0;">
-                        <li class="feature-item">
-                            <div class="feature-check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"
-                                    stroke="currentColor" stroke-width="4" stroke-linecap="round"
-                                    stroke-linejoin="round">
-                                    <polyline points="20 6 9 17 4 12"></polyline>
-                                </svg></div> +2.000 Atividades PDF
+                    style="display: flex; flex-direction: column; background: white; box-shadow: 0 30px 60px -12px rgba(50,50,93,0.25), 0 18px 36px -18px rgba(0,0,0,0.3);">
+                    <div
+                        style="background-color: #FDF2F8; color: #DB2777; display: inline-block; padding: 0.4rem 1.2rem; border-radius: 8px; font-weight: 900; font-size: 0.8rem; margin-bottom: 2rem; align-self: flex-start; border: 1px solid #FBCFE8;">
+                        ☆ 🔥 Super Pacote</div>
+                    <h3 style="font-size: 1.8rem; margin-bottom: 2.5rem;">Preparação Completa para <br> o Ano Letivo
+                    </h3>
+                    <ul class="para-quem-list mb-4" style="flex-grow: 1; gap: 1rem;">
+                        <li class="para-quem-item">
+                            <div class="check-icon"
+                                style="background:#ECFDF5; border-radius:50%; width:20px; height:20px; display:flex; align-items:center; justify-content:center; color:#10B981; font-size:12px;">
+                                ✓</div> +1.000 Atividades
                         </li>
-                        <li class="feature-item">
-                            <div class="feature-check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"
-                                    stroke="currentColor" stroke-width="4" stroke-linecap="round"
-                                    stroke-linejoin="round">
-                                    <polyline points="20 6 9 17 4 12"></polyline>
-                                </svg></div> Acesso Vitalício
+                        <li class="para-quem-item">
+                            <div class="check-icon"
+                                style="background:#ECFDF5; border-radius:50%; width:20px; height:20px; display:flex; align-items:center; justify-content:center; color:#10B981; font-size:12px;">
+                                ✓</div> Atividades Coloridas e Divertidas
                         </li>
-                        <li class="feature-item" style="color: #DB2777;">
-                            <div class="feature-check"
-                                style="background-color: #FDF2F8; color: #DB2777; border-radius: 5px;"><svg width="14"
-                                    height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="4"
-                                    stroke-linecap="round" stroke-linejoin="round">
-                                    <polyline points="20 6 9 17 4 12"></polyline>
-                                </svg></div> Bônus: Livro de Colorir
+                        <li class="para-quem-item">
+                            <div class="check-icon"
+                                style="background:#ECFDF5; border-radius:50%; width:20px; height:20px; display:flex; align-items:center; justify-content:center; color:#10B981; font-size:12px;">
+                                ✓</div> Jogos, desafios e cartas por idade
+                        </li>
+                        <li class="para-quem-item">
+                            <div class="check-icon"
+                                style="background:#ECFDF5; border-radius:50%; width:20px; height:20px; display:flex; align-items:center; justify-content:center; color:#10B981; font-size:12px;">
+                                ✓</div> Atividades de lógica, formas, núcleos e linguagem
+                        </li>
+                        <li class="para-quem-item">
+                            <div class="check-icon"
+                                style="background:#ECFDF5; border-radius:50%; width:20px; height:20px; display:flex; align-items:center; justify-content:center; color:#10B981; font-size:12px;">
+                                ✓</div> Acesso vitalício
+                        </li>
+                        <li class="para-quem-item">
+                            <div class="check-icon"
+                                style="background:#ECFDF5; border-radius:50%; width:20px; height:20px; display:flex; align-items:center; justify-content:center; color:#10B981; font-size:12px;">
+                                ✓</div> Atualização Semanal
                         </li>
                     </ul>
-                    <div class="price-tag">
-                        <div class="old-price">De R$ 97,90</div>
-                        <div style="display: flex; align-items: baseline; justify-content: center; gap: 0.25rem;">
-                            <span style="font-weight: 800; font-size: 1.25rem;">R$</span>
-                            <span class="new-price" style="color: #3B82F6; font-size: 4rem;">19,90</span>
+                    <div
+                        style="background-color: #FEF2F2; padding: 1.5rem; border-radius: 1.5rem; margin: 2rem 0; border: 1px solid #FEE2E2;">
+                        <p style="font-size: 1rem; font-weight: 900; color: #EF4444; margin-bottom: 1rem;">🎁 Bônus
+                            Exclusivos:</p>
+                        <ul
+                            style="list-style: none; display: flex; flex-direction: column; gap: 0.6rem; font-size: 0.9rem; font-weight: 700; color: #6B7280;">
+                            <li>🎁 +50 Atividades Lúdicas Extras</li>
+                            <li>🎁 Livro de Colorir</li>
+                            <li>🎁 Livro Guia do Autismo</li>
+                        </ul>
+                    </div>
+                    <div class="mb-4">
+                        <span class="old-price" style="font-size: 1.2rem;">De R$ 97,90</span>
+                        <div style="display: flex; align-items: baseline; gap: 0.75rem; margin-top: 0.5rem;">
+                            <span style="font-weight: 800; color: #374151; font-size: 1.5rem;">Por apenas</span>
+                            <span class="new-price text-blue" style="font-size: 4.5rem; line-height: 1;">R$ 19,90</span>
                         </div>
                     </div>
-                    <a href="#" class="btn-cta"
-                        style="background: linear-gradient(180deg, #3B82F6 0%, #2563EB 100%);">Garantir Agora</a>
+                    <a href="#" class="btn-cta btn-green"
+                        style="width: 100%; border-radius: 12px; font-size: 1.5rem; padding: 1.5rem;">Quero agora →</a>
+                    <p class="text-center"
+                        style="font-size: 0.85rem; font-weight: 800; color: #9CA3AF; margin-top: 1.5rem;">👉 Oferta por
+                        tempo limitado</p>
+                </div>
+            </div>
+
+            <div class="mt-4 text-center">
+                <div
+                    style="background-color: #FFF1F2; color: #E11D48; display: inline-block; padding: 0.8rem 3rem; border-radius: 999px; font-weight: 900; font-size: 1rem; border: 1px solid #FEE2E2;">
+                    🔥 Oferta válida apenas hoje — Garanta agora!
                 </div>
             </div>
         </section>
 
-        <!-- FAQ Section -->
-        <section class="faq" style="padding: 0 1.5rem 4rem;">
-            <h2 class="text-center" style="font-size: 1.8rem; margin-bottom: 3rem;">Dúvidas Frequentes</h2>
-            <div class="faq-container">
-                <div class="faq-item">
-                    <div class="faq-question">Como recebo o material? <svg class="faq-icon" width="20" height="20"
-                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
-                            stroke-linecap="round" stroke-linejoin="round">
-                            <polyline points="6 9 12 15 18 9"></polyline>
-                        </svg></div>
-                    <div class="faq-answer">O material é 100% digital enviado por e-mail e WhatsApp.</div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question">Para qual idade é indicado? <svg class="faq-icon" width="20" height="20"
-                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
-                            stroke-linecap="round" stroke-linejoin="round">
-                            <polyline points="6 9 12 15 18 9"></polyline>
-                        </svg></div>
-                    <div class="faq-answer">Indicado para crianças de 0 a 7 anos.</div>
+        <!-- Final CTA -->
+        <section style="background-color: #F9FAFB; padding: 8rem 1.5rem;">
+            <div
+                style="background-color: white; border-radius: 3rem; padding: 6rem 3rem; box-shadow: var(--shadow-2xl); text-align: center; max-width: 800px; margin: 0 auto; border: 1px solid #F3F4F6;">
+                <div
+                    style="background: linear-gradient(135deg, #FDF2F8 0%, #E0E7FF 100%); width: 100px; height: 100px; border-radius: 25px; display: flex; align-items: center; justify-content: center; font-size: 3rem; margin: 0 auto 3.5rem;">
+                    🚀</div>
+
+                <h2 style="font-size: 3.5rem; margin-bottom: 2.5rem;">Prepare Seu Filho Para Uma <br> <span
+                        class="text-gradient">Volta às Aulas Incríveis!</span></h2>
+
+                <p
+                    style="color: #6B7280; font-weight: 600; margin-bottom: 4rem; max-width: 600px; margin-left: auto; margin-right: auto; font-size: 1.25rem; line-height: 1.6;">
+                    Não deixe para depois. O ano letivo já está aí e seu filho pode começar com uma vantagem real — mais
+                    focado, mais confiante e mais preparado.</p>
+
+                <a href="#pricing" class="btn-cta btn-green mb-4"
+                    style="max-width: 450px; font-size: 1.5rem; padding: 1.6rem;">
+                    Quero Garantir Agora →
+                </a>
+
+                <div
+                    style="display: flex; gap: 2rem; justify-content: center; align-items: center; font-size: 1rem; font-weight: 700; color: #9CA3AF; margin-top: 3rem;">
+                    <div style="display: flex; align-items: center; gap: 0.5rem;"><span
+                            style="color: #10B981; font-size: 1.2rem;">✓</span> Compre 100% Segura</div>
+                    <div style="display: flex; align-items: center; gap: 0.5rem;"><span
+                            style="color: #3B82F6; font-size: 1.2rem;">🕒</span> Acesso Imediato</div>
+                    <div style="display: flex; align-items: center; gap: 0.5rem;"><span
+                            style="font-size: 1.2rem;">👍</span> Satisfação Garantida</div>
                 </div>
             </div>
         </section>
 
         <footer>
-            <div class="footer-logo">
-                <img src="https://i.im.ge/2026/01/28/GGmMmM.ChatGPT-Image-27-de-jan-de-2026-23-31-47.png" alt="Brain">
-                <span>Cérebro em Jogo</span>
+            <div style="color: #4B5563; font-weight: 800; font-size: 1.1rem; margin-bottom: 1.5rem;">
+                Feito com <span style="color: #F43F5E;">❤️</span> para o desenvolvimento das crianças
             </div>
-            <p style="font-size: 0.9rem; font-weight: 800; color: #1F2937; margin-bottom: 2rem;">Prepare Seu Filho Para
-                Uma Volta às Aulas Incrível!</p>
-            <p style="font-size: 0.8rem;">Feito com ❤️ para o desenvolvimento das crianças</p>
-            <p style="font-size: 0.75rem; margin-top: 1rem; opacity: 0.6;">© 2025 Cérebro em Jogo. Todos os direitos
-                reservados.</p>
+            <p style="opacity: 0.6; font-weight: 700;">© 2025 Cérebro em Jogo. Todos os direitos reservados.</p>
         </footer>
     </div>
 
