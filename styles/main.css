@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+:root {
+    --bg-main: hsl(45, 100%, 98%);
+    --text-main: hsl(240, 30%, 20%);
+    --primary: hsl(217, 91%, 60%);
+    --secondary: hsl(45, 100%, 60%);
+    --accent: hsl(340, 82%, 65%);
+    --success: hsl(158, 64%, 52%);
+    --success-dark: hsl(158, 64%, 42%);
+    --white: #FFFFFF;
+    --radius-xl: 1.5rem;
+    --radius-2xl: 2rem;
+    --shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+}
+
+body {
+    background-color: var(--bg-main);
+    color: var(--text-main);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+.container {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+/* Typography */
+h1,
+h2,
+h3 {
+    font-weight: 800;
+    line-height: 1.2;
+}
+
+.text-gradient {
+    background: linear-gradient(135deg, var(--primary), #8B5CF6, var(--accent));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Sections */
+section {
+    padding: 3rem 0;
+    position: relative;
+}
+
+/* Hero */
+.hero {
+    text-align: center;
+    padding-top: 2rem;
+}
+
+.logo-container {
+    margin-bottom: 2rem;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: 900;
+    color: var(--primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.hero-headline {
+    font-size: 2.22rem;
+    margin-bottom: 1.5rem;
+    color: var(--text-main);
+}
+
+.hero-body {
+    font-size: 1.1rem;
+    color: var(--text-main);
+    opacity: 0.9;
+    margin-bottom: 2rem;
+}
+
+/* Buttons */
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    padding: 1.25rem 2rem;
+    border-radius: var(--radius-xl);
+    font-weight: 800;
+    font-size: 1.2rem;
+    text-decoration: none;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, var(--success), var(--success-dark));
+    color: white;
+    box-shadow: 0 10px 15px -3px rgba(16, 185, 129, 0.3);
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 20px 25px -5px rgba(16, 185, 129, 0.4);
+}
+
+/* Cards */
+.card {
+    background: var(--white);
+    border-radius: var(--radius-xl);
+    padding: 2rem;
+    box-shadow: var(--shadow);
+    margin-bottom: 2rem;
+}
+
+/* Background Decorations */
+.bg-shape {
+    position: absolute;
+    z-index: -1;
+    border-radius: 50%;
+    filter: blur(60px);
+    opacity: 0.15;
+}
+
+.shape-1 {
+    width: 300px;
+    height: 300px;
+    background: var(--secondary);
+    top: -50px;
+    left: -100px;
+}
+
+.shape-2 {
+    width: 250px;
+    height: 250px;
+    background: var(--accent);
+    top: 150px;
+    right: -50px;
+}
+
+.shape-3 {
+    width: 200px;
+    height: 200px;
+    background: var(--primary);
+    bottom: 10%;
+    left: -20px;
+}
+
+/* Benefits Grid */
+.benefits-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.benefit-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.25rem;
+    background: var(--white);
+    border-radius: 1.25rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.benefit-icon {
+    font-size: 1.5rem;
+    min-width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--bg-main);
+    border-radius: 0.75rem;
+}
+
+/* Pricing */
+.pricing-card {
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+    position: relative;
+    padding: 2.5rem 2rem;
+}
+
+.pricing-card.popular {
+    border: 2px solid var(--primary);
+    transform: scale(1.02);
+}
+
+.badge {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: var(--primary);
+    color: white;
+    padding: 0.25rem 0.75rem;
+    border-radius: 999px;
+    font-size: 0.75rem;
+    font-weight: 700;
+}
+
+.price-old {
+    text-decoration: line-through;
+    color: var(--text-muted);
+    font-size: 1.1rem;
+    margin-bottom: 0.25rem;
+    display: block;
+}
+
+.price-new {
+    font-size: 3.5rem;
+    font-weight: 900;
+    color: var(--primary);
+}
+
+/* FAQ */
+.faq-container {
+    margin-top: 2rem;
+}
+
+.faq-item {
+    border-bottom: 1px solid #E5E7EB;
+    padding: 1.5rem 0;
+}
+
+.faq-question {
+    font-weight: 700;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.1rem;
+}
+
+.faq-answer {
+    padding-top: 1rem;
+    color: var(--text-muted);
+    display: none;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.faq-item.active .faq-answer {
+    display: block;
+}
+
+.faq-icon {
+    transition: transform 0.3s ease;
+}
+
+.faq-item.active .faq-icon {
+    transform: rotate(180deg);
+}
+
+/* Utilities */
+.mb-1 {
+    margin-bottom: 0.5rem;
+}
+
+.mb-2 {
+    margin-bottom: 1rem;
+}
+
+.mb-4 {
+    margin-bottom: 2rem;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.fw-extrabold {
+    font-weight: 800;
+}
+
+footer {
+    padding: 4rem 1.5rem;
+    text-align: center;
+    background: #F3F4F6;
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    margin-top: 4rem;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.footer-links a {
+    color: var(--text-muted);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.footer-links a:hover {
+    color: var(--primary);
+}
